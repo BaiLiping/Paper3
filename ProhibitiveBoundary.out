@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Reinforcement Learning for Control}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Where to Approximate}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Intuition Behind Neural Network}{section.2}% 4
+\BOOKMARK [3][-]{figure.caption.4}{Basic Network}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Recurrent Network and Variational Inference}{subsection.2.2}% 6
+\BOOKMARK [1][-]{section.3}{Prohibitive Boundary}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{for CartPole}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{CartPole-v1 Prohibitive Boundary Implementation}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Pole Angle Boundary at 10 and -10 degree}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Cart Position at 0.9 and -0.9`}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Where to Approximate}{}% 12
+\BOOKMARK [1][-]{section.6}{System Modelling}{}% 13
+\BOOKMARK [1][-]{section.7}{Policy Gradient}{}% 14
+\BOOKMARK [1][-]{section.8}{Approximate Dynamic Programming}{}% 15
+\BOOKMARK [2][-]{subsection.8.1}{Value Iteration and Policy Iteration}{section.8}% 16
+\BOOKMARK [2][-]{subsection.8.2}{Maximum Entropy Reinforcement Learning}{section.8}% 17
+\BOOKMARK [1][-]{section.9}{Other Ways to Utilize Increased Computational Power}{}% 18
+\BOOKMARK [2][-]{subsection.9.1}{Multiagent Formulation}{section.9}% 19
+\BOOKMARK [2][-]{subsection.9.2}{Random Shoot}{section.9}% 20
+\BOOKMARK [1][-]{section*.5}{References}{}% 21

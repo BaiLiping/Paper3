@@ -73,14 +73,10 @@ Reinforcement Learning, Assisted Reinforcement Leraning, Reward Engineering
 \section{Introduction}
 \IEEEPARstart{R}{einforcement} learning is the process of methotically extracting information from experiments to gradually bound the policy distribution, maximizing the expected reward along a path. Trajectory Optimization, on the other hand, tries to capture the dynamics of a system with differential or recurssive equations, and reshape the phase portrait with actions at each step. When the first batch of reasonable RL results were introduced, they were met with coldness. The preface of Bertseka's book Neuro Dynamic Programming provides a good sample on how reinforcement learning is perceived by the control community back in 1996: ...These methods (Reinforcement Learning) were aiming to provide effective suboptimal solutions to complex problems of planning and sequential decision making under uncertainty, that for a long time were thought to be intractable. Our first impression was that the new methods were ambitious, overly optimistic, and lacked firm foundation....Three years later, after a lot of study, analysis, and experimentation, we believe that our initial impressions were largely correct. \cite{Bertsekas1996NeuroDynamicP}
 
+\section{Reinforcement Learning}
 Things are certainly different today. Reinforment Learning community routinely generates results that seem untainable to the control community. What has changed is not the theoretical foundation of RL, which is as leaky as it was in 1996, but its computational infrastructure. DeepMind introduced DQN which enjoyed the success in Atari games, yet their success are not easy to reproduce. There are lot of tricks when it comes to training of the network etc.
 
 Before 2010, the predominent tools for function approximation are kernel methods, where feature spaces are used to transform nonlinear functions into linear space such that regression can be performed. Today, the default function approximator are neural networks. Another major change in computation is that of GPU based acceleration. Before the advent of CUDA, GPU programming requires PhD in computer graphics. Today, anyone who is proficient in C/C++ can programme GPU to parallelize their compuation. Software packages such as PyTorch and Tensorflow made this even easier.
-
-jkjkjkjkkjkk
-
-
-
 
 \section{Reinforcement Learning for Control}
 Control communities use the notation system introduced by Lev Pontryagin. State is denoted $ \mathcal{X}$, Action is denoted $\mathcal{U}$ (the first letter of Russian for "Action"), the dynamics and stocasticity is captured by physical model constraints $x_{t+1}=f(x_t,u_t,e_t)$ where e denote the noise of a system. The objective is usually to minimize the cost funtion $\mathcal{J(.)}$. Reinforcement Learning communities use the notation system introduced by Richard Bellman who studied dynamic programming. State is denoted $\mathcal{S}$, Action is denoted $\mathcal{A}$. The dynamics and stochaticity is captured via transition matrix $\mathcal{P}$ of a Markov Decision Process.The objective of RL is the maximize the reward function $\mathcal{R(.)}$. Yet, if we set the transition matrix to be identical to the noise, then it is clear that the underlying process behind these two notation system are exactly the same. The differences are nothing but style. Since the audience of our paper is the control community, we would cast reinforcement learning in the control notation system.
@@ -116,113 +112,21 @@ The mathematical measurement used is mutual information \cite{Kullback1951ONIA}.
 \subsection{Intuition Behind Neural Network}
 By now, neural network is widely accepted that as the universal function approximator \cite{Hornik1991ApproximationCO} and the grandfathers of this field such as Andrew Ng and Geoffrey Hinton are also its most proficient proselytizer. Yet not that many materials goes into the intution behind neural network. Here we provide control researchers with minimal exposure to deep learning the graphical reasonings behind neural network. For people who are interested in tracing the deveopment of this subject, we list the following seminal papers: \cite{Schwartz1989TheNC} \cite{Hornik1989MultilayerFN}........
 
-\subsubsection{Basic Network}
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{0.25\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{network1.png}
-\end{subfigure}%
-\begin{subfigure}{.25\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{network2.png}
-\end{subfigure}
-\caption{Graphical Representation of Network Unit}
-\label{fig:combine}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{0.25\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{network3.png}
-\end{subfigure}%
-\begin{subfigure}{.25\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{network4.png}
-\end{subfigure}
-\caption{jljlkjljljlkj }
-\label{fig:combine}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{0.25\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{network5.png}
-\end{subfigure}%
-\begin{subfigure}{.25\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{network6.png}
-\end{subfigure}
-\caption{lkjlkjlkjlkj}
-\label{fig:combine}
-\end{figure}
-
-\subsubsection{Recurrent Network and Variational Inference}
-Pratially Observable Markov Decision Process (POMDP) is treated with recurrent neural network to contextualize the
-
-
-
 
 \section{Prohibitive Boundary}
 
-\subsection{for CartPole}
+asdfjladjfljaldjfklkjkj
+
+\subsection{Experiments on OpenAI Gym}
+\subsubsection{CartPole}
+\subsubsection{Inverted Pendulum}
+\subsubsection{Inverted Double Pendulum}
+\subsubsection{Mountain Car}
+\subsubsection{}
 
 
+\section{Conclution}
 
-
-
-
-
-PAPRE2 and PAPER3 Should be combined
-
-
-
-
-
-
-
-
-\section{CartPole-v1 Prohibitive Boundary Implementation}
-The CartPole environment observation space consist of four data points: Cart Position along the x axis, Cart Velocity, Pole Angle and Pole Angular Velocity. The terminal state is either cart position greater than 1, smaller than -1 or the pole angle greater than 12 degree or smaller than -12 degree. There are two ways to extablish the prohibitive boundaries.
-
-\subsection{Pole Angle Boundary at 10 and -10 degree}
-
-\subsection{Cart Position at 0.9 and -0.9`}
-
-
-
-% === II. Harmonically-Terminated Power Rectifier Analysis ========================
-% =================================================================================
-\section{Where to Approximate}
-
-
-
-\section{System Modelling}
-
-\section{Policy Gradient}
-
-\section{Approximate Dynamic Programming}
-Control theoriests are familiar with Approximate Dynamic Programming, it
-
-
-
-
-
-
-\subsection{Value Iteration and Policy Iteration}
-\subsection{Maximum Entropy Reinforcement Learning}
-
-
-
-\section{Other Ways to Utilize Increased Computational Power}
-\subsection{Multiagent Formulation}
-
-
-
-\subsection{Random Shoot}
 
 
 

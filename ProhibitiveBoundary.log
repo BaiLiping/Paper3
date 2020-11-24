@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  23 NOV 2020 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  24 NOV 2020 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,14 +884,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count327
 \l__pdf_internal_box=\box111
 )
-(./ProhibitiveBoundary.aux
-
-LaTeX Warning: Label `fig:combine' multiply defined.
-
-
-LaTeX Warning: Label `fig:combine' multiply defined.
-
-)
+(./ProhibitiveBoundary.aux)
 \openout1 = `ProhibitiveBoundary.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -921,7 +914,8 @@ LaTeX Info: Redefining \showhyphens on input line 42.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -987,7 +981,7 @@ ABD: EveryShipout initializing macros
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -996,7 +990,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1008,176 +1002,78 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ]
-<Control.png, id=108, 1046.91125pt x 636.3775pt>
+<Control.png, id=81, 1046.91125pt x 636.3775pt>
 File: Control.png Graphic file (type png)
 <use Control.png>
-Package pdftex.def Info: Control.png  used on input line 97.
+Package pdftex.def Info: Control.png  used on input line 93.
 (pdftex.def)             Requested size: 258.0pt x 156.82176pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 97--98
+Overfull \hbox (6.0pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
 
 LaTeX Warning: Citation `Schwartz1989TheNC' on page 2 undefined on input line 1
-17.
+13.
 
 
 LaTeX Warning: Citation `Hornik1989MultilayerFN' on page 2 undefined on input l
-ine 117.
+ine 113.
 
+[2 <./Control.png>]
+<training1.png, id=98, 432.61626pt x 371.3875pt>
+File: training1.png Graphic file (type png)
+<use training1.png>
+Package pdftex.def Info: training1.png  used on input line 123.
+(pdftex.def)             Requested size: 129.0pt x 110.74274pt.
+<training2.png, id=99, 428.60126pt x 372.39125pt>
+File: training2.png Graphic file (type png)
+<use training2.png>
+Package pdftex.def Info: training2.png  used on input line 128.
+(pdftex.def)             Requested size: 129.0pt x 112.0819pt.
 
-LaTeX Warning: File `network1.png' not found on input line 125.
-
-
-! Package pdftex.def Error: File `network1.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.125 ...egraphics[width=\linewidth]{network1.png}
-                                                  
-? 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
-5.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: File `network2.png' not found on input line 129.
-
-
-! Package pdftex.def Error: File `network2.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 ...egraphics[width=\linewidth]{network2.png}
-                                                  
-? 
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 123--131
+Overfull \hbox (6.0pt too wide) in paragraph at lines 121--131
  []$[]$$[]$ 
  []
 
+(./ProhibitiveBoundary.bbl) [3
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ <./training1.png> <./training2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
 
- [2 <./Control.png>]
-
-LaTeX Warning: File `network3.png' not found on input line 139.
-
-
-! Package pdftex.def Error: File `network3.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 ...egraphics[width=\linewidth]{network3.png}
-                                                  
-? 
-
-LaTeX Warning: File `network4.png' not found on input line 143.
-
-
-! Package pdftex.def Error: File `network4.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 ...egraphics[width=\linewidth]{network4.png}
-                                                  
-? 
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 137--145
- []$[]$$[]$ 
- []
-
-
-LaTeX Warning: File `network5.png' not found on input line 153.
-
-
-! Package pdftex.def Error: File `network5.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 ...egraphics[width=\linewidth]{network5.png}
-                                                  
-? 
-
-LaTeX Warning: File `network6.png' not found on input line 157.
-
-
-! Package pdftex.def Error: File `network6.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 ...egraphics[width=\linewidth]{network6.png}
-                                                  
-? 
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 151--159
- []$[]$$[]$ 
- []
-
-(./ProhibitiveBoundary.bbl) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
- (./ProhibitiveBoundary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
+(./ProhibitiveBoundary.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `ProhibitiveBoundary.out' has not changed.
-(rerunfilecheck)             Checksum: 4D8B7DD3B5CB5E1C587951B494A5FA33;1472.
+(rerunfilecheck)             Checksum: F2EE53761223F2E276C35CA10839F03F;903.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 23123 strings out of 481239
- 418501 string characters out of 5920378
- 691253 words of memory out of 5000000
- 37738 multiletter control sequences out of 15000+600000
- 651759 words of font info for 222 fonts, out of 8000000 for 9000
+ 22969 strings out of 481239
+ 416426 string characters out of 5920378
+ 691244 words of memory out of 5000000
+ 37621 multiletter control sequences out of 15000+600000
+ 650783 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,60p,1768b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,60p,1893b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
-er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProhibitiveBoundary.pdf (3 pages, 194731 bytes).
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ProhibitiveBoundary.pdf (3 pages, 562414 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 28346 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 27788 words of extra memory for PDF output out of 29859 (max. 10000000)
 

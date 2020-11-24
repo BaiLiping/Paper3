@@ -50,7 +50,7 @@
 % === ABSTRACT ====================================================================
 % =================================================================================
 \begin{abstract}
-	Prohibitive Boundary is a common concept for atheletic training. Gymnast, divers, figure skaters would wear harness or a coach would be present to prevent themselves from falling while training for new skills. The same is true for children, as parents caringly provide a helping hand instead of just let them try things out themselves. Reinforcement Learning is an extention of approximate dynamic programming, witch reasons backwards and a lookup table is built in the mean time. With the newly added capacity brought about by deep learning, deep reinforcement learning is proven to be a formitable force when it comes to control. However, there is a clear difference between reinforcement learning and human learning. While out joints can have all kinds of combinatorial movement, we only use a few of those even in the most rigirous circumstances. Also, the way we learn to syncronize out joints is not a exhaustive trial and error process. Immitation learning seek to address this issue by provide a model trajectory, and meta-learning see to address this by provide agents with a sense of physics. In this paper, we mimic the prohibitive boundary method we see in atheletic training to provide agents additional clues about the environment. There are two advantages in this proposed scheme. First, the prohibitive boundary prevent premature termination of an episode, which is of particular importance to environment where failure is costly. Second, the prohibitive boundary method accelerate data collection on states/action pair that matters. We implemented the proposed prohibitibe boundary scheme on various OpenAI Gym environments, and for all the experiments carried out, prohibitive boundary has shown to accelerate training. All the code can be found at: \href{https://github.com/BaiLiping/Prohibitive_Boundary}
+Prohibitive Boundary is a common concept for atheletic training. Gymnast, divers, figure skaters would wear harness or a coach would be present to prevent themselves from falling while training for new skills. The same is true for children, as parents caringly provide a helping hand instead of just let them try things out themselves. Reinforcement Learning is an extention of approximate dynamic programming, witch reasons backwards and a lookup table is built in the mean time. With the newly added capacity brought about by deep learning, deep reinforcement learning is proven to be a formitable force when it comes to control. However, there is a clear difference between reinforcement learning and human learning. While out joints can have all kinds of combinatorial movement, we only use a few of those even in the most rigirous circumstances. Also, the way we learn to syncronize out joints is not a exhaustive trial and error process. Immitation learning seek to address this issue by provide a model trajectory, and meta-learning see to address this by provide agents with a sense of physics. In this paper, we mimic the prohibitive boundary method we see in atheletic training to provide agents additional clues about the environment. There are two advantages in this proposed scheme. First, the prohibitive boundary prevent premature termination of an episode, which is of particular importance to environment where failure is costly. Second, the prohibitive boundary method accelerate data collection on states/action pair that matters. We implemented the proposed prohibitibe boundary scheme on various OpenAI Gym environments, and for all the experiments carried out, prohibitive boundary has shown to accelerate training. All the code and data can be found at: \href{https://github.com/BaiLiping/Prohibitive_Boundary}{Code Deposite}
 \end{abstract}
 % === KEYWORDS ====================================================================
 % =================================================================================
@@ -114,25 +114,25 @@ By now, neural network is widely accepted that as the universal function approxi
 
 
 \section{Prohibitive Boundary}
-Have you ever wondered how do world class athelets such as gymnists, figure skaters, divers accomplish feats that are seemingly impossible to us ordinary human?  While bruises, torn ligaments, broken bones, even concausion are part of being an athelete, those injuries are by no means trivial and should be minimized at any cost. Should athletes train the same way as reinforcement learning agents, they would be dead before they can pick up any skill.Prohibitive Boundaries, implemented with either human coach or training harnesses is integral part of atheletic skills acquisition, as examplified by the following figures:
+Have you ever wondered how do world class athelets such as gymnists, figure skaters, divers accomplish feats that are seemingly impossible to us ordinary human?  While bruises, torn ligaments, broken bones, even concausion are part of being an athelete, those injuries are by no means trivial and should be minimized at any cost. Should athletes train the same way as reinforcement learning agents, they would be dead before they can pick up any skill.Prohibitive Boundaries, implemented with either human coach or training harnesses is integral part of atheletic skills acquisition, as examplified by the following figures. Detailed examples of how atheletes utilizes prohibitive boundary can be found \href{https://www.youtube.com/playlist?list=PLyqL4-20ZuTRo-DysDQBGDnwZsrySXP4b}{here}.
 
 \begin{figure}[H]
 \centering
 \begin{subfigure}{0.25\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{/img/training1.png}
+  \includegraphics[width=\linewidth]{training1.png}
   \caption{Human Prohibitive Boundary}
 \end{subfigure}%
 \begin{subfigure}{.25\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{/img/traning2.png}
+  \includegraphics[width=\linewidth]{training2.png}
   \caption{Harness Prohibitive Boundary}
 \end{subfigure}
 \caption{Prohibitive Boundary in Atheletic Training}
 \label{fig:athelet}
 \end{figure}
 
-\href{https://www.youtube.com/playlist?list=PLyqL4-20ZuTRo-DysDQBGDnwZsrySXP4b}{How Athletes Utilize Prohibitive Boundary During Their Training}
+
 
 
 Do they train as it would we train the agents in a reinforcement learning setup? The answer is clearly now, since for those athlets, failure means catestrophic consequences such as broken bones, torn ligaments, concausion etc. While being atheletes means accepting the possibility of permenent harm from training, the entire sport industry try hard to minimize the downside of training.

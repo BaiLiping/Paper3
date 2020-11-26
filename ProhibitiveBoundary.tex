@@ -94,14 +94,7 @@ Neural Networks can be used to approximate system dynamics function, which is to
 \subsubsection{Advantage Actor Critic(A2C)}
 \subsubsection{Trust Region Actor Critic}
 \subsubsection{PPO}
-
-
-
-
-
 \subsection{Entropy Regularization}
-
-
 \section{Protective Boundary}
 \subsection{Protective Boundaries in Atheletic Training}
 Have you ever wondered how do world class athelets such as gymnists, figure skaters, divers accomplish feats that are seemingly impossible to us ordinary human?  While bruises, torn ligaments, broken bones, even concausion are part of being an athelete, those injuries are by no means trivial and should be minimized at all cost. Should athletes train the same way as would reinforcement learning agents, they will be dead or so severely injured before they can pick up any skill. Protective Boundaries, implemented with either human coach or training harnesses is integral part of atheletic skill acquisition process, as examplified by the following pictures. Detailed examples of how atheletes utilizes Protective boundary can be found \href{https://www.youtube.com/playlist?list=PLyqL4-20ZuTRo-DysDQBGDnwZsrySXP4b}{here}.
@@ -126,6 +119,7 @@ Have you ever wondered how do world class athelets such as gymnists, figure skat
 
 Do they train as it would we train the agents in a reinforcement learning setup? The answer is clearly now, since for those athlets, failure means catestrophic consequences such as broken bones, torn ligaments, concausion etc. While being atheletes means accepting the possibility of permenent harm from training, the entire sport industry try hard to minimize the downside of training.
 
+PIRCUTRES OF THE IMPLEMENTATION
 
 \subsection{Experiments on OpenAI Gym}
 \subsubsection{CartPole}
@@ -249,6 +243,9 @@ adfjakjdfhkjahdfkjhasdfkjh
 
 
 \section{Conclution}
+As shown by our experiments, when the position and punishing parameter of protective boundary is appropriate, reinforcement learning agent training can be accelerated, much like human atheletes accelerate their acquistion of skills with protective equipments. When the boundary is too restrictive, instead of facilitate the learning, it actually hinders it. When the parameter is set too punishing, the learning process is slowed. The rule of thumb we used during our experiments is that the punishing parameter should be roughly the same as the reward.
+
+The position and parameter of protective boundary is still set in a haphazard fashion. Analytical frameworks need to be deviced in order to solve this in a systematic manner.
 
 \bibliographystyle{IEEEtran}
 \bibliography{Bibliography}

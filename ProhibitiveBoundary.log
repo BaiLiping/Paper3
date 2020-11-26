@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  24 NOV 2020 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  26 NOV 2020 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1002,7 +1002,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ]
-<Control.png, id=81, 1046.91125pt x 636.3775pt>
+<Control.png, id=101, 1046.91125pt x 636.3775pt>
 File: Control.png Graphic file (type png)
 <use Control.png>
 Package pdftex.def Info: Control.png  used on input line 85.
@@ -1021,12 +1021,12 @@ LaTeX Warning: Citation `Hornik1989MultilayerFN' on page 2 undefined on input l
 ine 105.
 
 [2 <./Control.png>]
-<training1.png, id=98, 432.61626pt x 371.3875pt>
+<training1.png, id=118, 432.61626pt x 371.3875pt>
 File: training1.png Graphic file (type png)
 <use training1.png>
 Package pdftex.def Info: training1.png  used on input line 116.
 (pdftex.def)             Requested size: 129.0pt x 110.74274pt.
-<training2.png, id=99, 428.60126pt x 372.39125pt>
+<training2.png, id=119, 428.60126pt x 372.39125pt>
 File: training2.png Graphic file (type png)
 <use training2.png>
 Package pdftex.def Info: training2.png  used on input line 121.
@@ -1036,15 +1036,122 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 114--124
  []$[]$$[]$ 
  []
 
-(./ProhibitiveBoundary.bbl) [3
+<Cartpole_with_Boundary_at_0.5.png, id=120, 939.51pt x 722.7pt>
+File: Cartpole_with_Boundary_at_0.5.png Graphic file (type png)
+<use Cartpole_with_Boundary_at_0.5.png>
+Package pdftex.def Info: Cartpole_with_Boundary_at_0.5.png  used on input line 
+143.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
 
- <./training1.png> <./training2.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 141--146
+ [][] 
+ []
+
+<Cartpole_with_Boundary_at_0.7.png, id=121, 939.51pt x 722.7pt>
+File: Cartpole_with_Boundary_at_0.7.png Graphic file (type png)
+<use Cartpole_with_Boundary_at_0.7.png>
+Package pdftex.def Info: Cartpole_with_Boundary_at_0.7.png  used on input line 
+149.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 147--152
+ [][] 
+ []
+
+<Cartpole_with_Boundary_at_0.9.png, id=122, 939.51pt x 722.7pt>
+File: Cartpole_with_Boundary_at_0.9.png Graphic file (type png)
+<use Cartpole_with_Boundary_at_0.9.png>
+Package pdftex.def Info: Cartpole_with_Boundary_at_0.9.png  used on input line 
+155.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 153--158
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<Inverted_Pendulum_with_Boundary_at_0.2.png, id=123, 939.51pt x 722.7pt>
+File: Inverted_Pendulum_with_Boundary_at_0.2.png Graphic file (type png)
+<use Inverted_Pendulum_with_Boundary_at_0.2.png>
+Package pdftex.def Info: Inverted_Pendulum_with_Boundary_at_0.2.png  used on in
+put line 170.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 168--173
+ [][] 
+ []
+
+<Inverted_Pendulum_with_Boundary_at_0.4.png, id=124, 939.51pt x 722.7pt>
+File: Inverted_Pendulum_with_Boundary_at_0.4.png Graphic file (type png)
+<use Inverted_Pendulum_with_Boundary_at_0.4.png>
+Package pdftex.def Info: Inverted_Pendulum_with_Boundary_at_0.4.png  used on in
+put line 176.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+<Inverted_Pendulum_with_Boundary_at_0.5.png, id=125, 939.51pt x 722.7pt>
+File: Inverted_Pendulum_with_Boundary_at_0.5.png Graphic file (type png)
+<use Inverted_Pendulum_with_Boundary_at_0.5.png>
+Package pdftex.def Info: Inverted_Pendulum_with_Boundary_at_0.5.png  used on in
+put line 181.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 174--184
+ [][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 174--184
+ [] 
+ []
+
+[3 <./training1.png> <./training2.png> <./Cartpole_with_Boundary_at_0.5.png> <.
+/Cartpole_with_Boundary_at_0.7.png> <./Cartpole_with_Boundary_at_0.9.png>]
+<Double_Pendulum_with_Boundary_at_0.4.png, id=137, 939.51pt x 722.7pt>
+File: Double_Pendulum_with_Boundary_at_0.4.png Graphic file (type png)
+<use Double_Pendulum_with_Boundary_at_0.4.png>
+Package pdftex.def Info: Double_Pendulum_with_Boundary_at_0.4.png  used on inpu
+t line 194.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 192--197
+ [][] 
+ []
+
+<Double_Pendulum_with_Boundary_at_0.5.png, id=138, 939.51pt x 722.7pt>
+File: Double_Pendulum_with_Boundary_at_0.5.png Graphic file (type png)
+<use Double_Pendulum_with_Boundary_at_0.5.png>
+Package pdftex.def Info: Double_Pendulum_with_Boundary_at_0.5.png  used on inpu
+t line 200.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+<Double_Pendulum_with_Boundary_at_0.6.png, id=139, 939.51pt x 722.7pt>
+File: Double_Pendulum_with_Boundary_at_0.6.png Graphic file (type png)
+<use Double_Pendulum_with_Boundary_at_0.6.png>
+Package pdftex.def Info: Double_Pendulum_with_Boundary_at_0.6.png  used on inpu
+t line 205.
+(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 198--208
+ [][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 198--208
+ [] 
+ []
+
+[4 <./Inverted_Pendulum_with_Boundary_at_0.2.png> <./Inverted_Pendulum_with_Bou
+ndary_at_0.4.png> <./Inverted_Pendulum_with_Boundary_at_0.5.png> <./Double_Pend
+ulum_with_Boundary_at_0.4.png> <./Double_Pendulum_with_Boundary_at_0.5.png> <./
+Double_Pendulum_with_Boundary_at_0.6.png>] (./ProhibitiveBoundary.bbl) [5
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
 
 (./ProhibitiveBoundary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 
 
 Package rerunfilecheck Warning: File `ProhibitiveBoundary.out' has changed.
@@ -1052,49 +1159,37 @@ Package rerunfilecheck Warning: File `ProhibitiveBoundary.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `ProhibitiveBoundary.out':
-(rerunfilecheck)             Before: F2EE53761223F2E276C35CA10839F03F;903
-(rerunfilecheck)             After:  4EC415AA5C6D7AA55F6322088E82B7FD;1089.
+(rerunfilecheck)             Before: 1F9B86828AC62E1BFC01BF71AB56A25C;1305
+(rerunfilecheck)             After:  5D17AE7C62FA34361FC0936948BC0E12;1302.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 22982 strings out of 481239
- 416603 string characters out of 5920378
- 691244 words of memory out of 5000000
- 37621 multiletter control sequences out of 15000+600000
- 651043 words of font info for 220 fonts, out of 8000000 for 9000
+ 23051 strings out of 481239
+ 419061 string characters out of 5920378
+ 691422 words of memory out of 5000000
+ 37674 multiletter control sequences out of 15000+600000
+ 651479 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,60p,1893b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.4.1.5} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.4} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProhibitiveBoundary.pdf (3 pages, 563083 bytes).
+ 60i,9n,60p,1887b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ProhibitiveBoundary.pdf (5 pages, 1773594 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 27788 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 27873 words of extra memory for PDF output out of 29859 (max. 10000000)
 

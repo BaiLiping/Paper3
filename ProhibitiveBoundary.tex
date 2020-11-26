@@ -42,7 +42,7 @@
 \begin{document}
 \bstctlcite{IEEEexample:BSTcontrol}
     \title{test}
-\title{Accelerate Reinforcement Learning with Prohibitive Boundaries}
+\title{Accelerate Reinforcement Learning with Protective Boundaries}
 
 \author{ Zongqiang Pang,Liping Bai ~\IEEEmembership{Member,~IEEE,} \thanks{Nanjing Unversity of Posts and Telecommunications, College of Automation \& College of Artificial Intelligence, Nanjing, Jiangsu,210000 China email:zqpang@njupt.edu.cn}}
 % ====================================================================
@@ -50,7 +50,7 @@
 % === ABSTRACT ====================================================================
 % =================================================================================
 \begin{abstract}
-Prohibitive Boundary is a common concept for atheletic training. Gymnast, divers, figure skaters would wear harness or a coach would be present to prevent themselves from falling while training for new skills. The same is true for children, as parents caringly provide a helping hand instead of just let them try things out themselves. Reinforcement Learning is an extention of approximate dynamic programming, witch reasons backwards and a lookup table is built in the mean time. With the newly added capacity brought about by deep learning, deep reinforcement learning is proven to be a formitable force when it comes to control. However, there is a clear difference between reinforcement learning and human learning. While out joints can have all kinds of combinatorial movement, we only use a few of those even in the most rigirous circumstances. Also, the way we learn to syncronize out joints is not a exhaustive trial and error process. Immitation learning seek to address this issue by provide a model trajectory, and meta-learning see to address this by provide agents with a sense of physics. In this paper, we mimic the prohibitive boundary method we see in atheletic training to provide agents additional clues about the environment. There are two advantages in this proposed scheme. First, the prohibitive boundary prevent premature termination of an episode, which is of particular importance to environment where failure is costly. Second, the prohibitive boundary method accelerate data collection on states/action pair that matters. We implemented the proposed prohibitibe boundary scheme on various OpenAI Gym environments, and for all the experiments carried out, prohibitive boundary has shown to accelerate training. All the code and data can be found at: \href{https://github.com/BaiLiping/Prohibitive_Boundary}{Code Deposite}
+Protective Boundary is a common concept for atheletic training. Gymnast, divers, figure skaters would wear harness or a coach would be present to prevent themselves from falling while training for new skills. The same is true for children, as parents caringly provide a helping hand instead of just let them try things out themselves. Reinforcement Learning is an extention of approximate dynamic programming, witch reasons backwards and a lookup table is built in the mean time. With the newly added capacity brought about by deep learning, deep reinforcement learning is proven to be a formitable force when it comes to control. However, there is a clear difference between reinforcement learning and human learning. While out joints can have all kinds of combinatorial movement, we only use a few of those even in the most rigirous circumstances. Also, the way we learn to syncronize out joints is not a exhaustive trial and error process. Immitation learning seek to address this issue by provide a model trajectory, and meta-learning see to address this by provide agents with a sense of physics. In this paper, we mimic the Protective boundary method we see in atheletic training to provide agents additional clues about the environment. There are two advantages in this proposed scheme. First, the Protective boundary prevent premature termination of an episode, which is of particular importance to environment where failure is costly. Second, the Protective boundary method accelerate data collection on states/action pair that matters. We implemented the proposed prohibitibe boundary scheme on various OpenAI Gym environments, and for all the experiments carried out, Protective boundary has shown to accelerate training. All the code and data can be found at: \href{https://github.com/BaiLiping/Protective_Boundary}{Code Deposite}
 \end{abstract}
 % === KEYWORDS ====================================================================
 % =================================================================================
@@ -105,27 +105,27 @@ The mathematical measurement used is mutual information \cite{Kullback1951ONIA}.
 By now, neural network is widely accepted that as the universal function approximator \cite{Hornik1991ApproximationCO} and the grandfathers of this field such as Andrew Ng and Geoffrey Hinton are also its most proficient proselytizer. Yet not that many materials goes into the intution behind neural network. Here we provide control researchers with minimal exposure to deep learning the graphical reasonings behind neural network. For people who are interested in tracing the deveopment of this subject, we list the following seminal papers: \cite{Schwartz1989TheNC} \cite{Hornik1989MultilayerFN}........
 
 
-\section{Prohibitive Boundary}
-\subsection{Prohibitive Boundaries in Atheletic Training}
-Have you ever wondered how do world class athelets such as gymnists, figure skaters, divers accomplish feats that are seemingly impossible to us ordinary human?  While bruises, torn ligaments, broken bones, even concausion are part of being an athelete, those injuries are by no means trivial and should be minimized at all cost. Should athletes train the same way as would reinforcement learning agents, they will be dead or so severely injured before they can pick up any skill. Prohibitive Boundaries, implemented with either human coach or training harnesses is integral part of atheletic skill acquisition process, as examplified by the following pictures. Detailed examples of how atheletes utilizes prohibitive boundary can be found \href{https://www.youtube.com/playlist?list=PLyqL4-20ZuTRo-DysDQBGDnwZsrySXP4b}{here}.
+\section{Protective Boundary}
+\subsection{Protective Boundaries in Atheletic Training}
+Have you ever wondered how do world class athelets such as gymnists, figure skaters, divers accomplish feats that are seemingly impossible to us ordinary human?  While bruises, torn ligaments, broken bones, even concausion are part of being an athelete, those injuries are by no means trivial and should be minimized at all cost. Should athletes train the same way as would reinforcement learning agents, they will be dead or so severely injured before they can pick up any skill. Protective Boundaries, implemented with either human coach or training harnesses is integral part of atheletic skill acquisition process, as examplified by the following pictures. Detailed examples of how atheletes utilizes Protective boundary can be found \href{https://www.youtube.com/playlist?list=PLyqL4-20ZuTRo-DysDQBGDnwZsrySXP4b}{here}.
 
 \begin{figure}[H]
 \centering
 \begin{subfigure}{0.25\textwidth}
   \centering
   \includegraphics[width=\linewidth]{training1.png}
-  \caption{Human Prohibitive Boundary}
+  \caption{Human Protective Boundary}
 \end{subfigure}%
 \begin{subfigure}{.25\textwidth}
   \centering
   \includegraphics[width=\linewidth]{training2.png}
-  \caption{Harness Prohibitive Boundary}
+  \caption{Harness Protective Boundary}
 \end{subfigure}
-\caption{Prohibitive Boundary in Atheletic Training}
+\caption{Protective Boundary in Atheletic Training}
 \label{fig:athelet}
 \end{figure}
 
-\subsection{Implement Prohibitive Boundary in RL Setup}
+\subsection{Implement Protective Boundary in RL Setup}
 
 
 
@@ -134,29 +134,85 @@ Do they train as it would we train the agents in a reinforcement learning setup?
 
 \subsection{Experiments on OpenAI Gym}
 \subsubsection{CartPole}
-
+fakdflaksdjflakdjflajsdlfjlakdfjlkajdsflkjlasdjf
+adfjakjdfhkjahdfkjhasdfkjh
 \begin{figure}[H]
-\centering
-\subfloat[Prohibitive Boundary at 0.5, Agents Trained over 300 Episodes, Evaluated over 5 Episodes.]{
-	\label{subfig:0.5}
-	\includegraphics[width=0.5\textwidth]{Cartpole_with_Boundary_at_0.5.png}}
-\subfloat[Prohibitive Boundary at 0.7, Agents Trained over 300 Episodes, Evaluated over 5 Episodes.]{
-  \label{subfig:0.7}
-  \includegraphics[width=0.5\textwidth]{Cartpole_with_Boundary_at_0.7.png}}
-\subfloat[Prohibitive Boundary at 0.9, Agents Trained over 300 Episodes, Evaluated over 5 Episodes.]{
-  \label{subfig:0.9}
-  \includegraphics[width=0.5\textwidth]{Cartpole_with_Boundary_at_0.9.png}}
-\caption{CartPole Experiments}
-\label{cartpole}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Cartpole_with_Boundary_at_0.5.png}
+      \caption{Protective Boundary at 0.5}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Cartpole_with_Boundary_at_0.7.png}
+      \caption{Protective Boundary at 0.7}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Cartpole_with_Boundary_at_0.9.png}
+      \caption{Protective Boundary at 0.9}
+    \end{subfigure}
+    \caption{CartPole Experiments}
+    \label{fig:CartPole}
 \end{figure}
 
 
-
-
-
-
 \subsubsection{Inverted Pendulum}
+fakdflaksdjflakdjflajsdlfjlakdfjlkajdsflkjlasdjf
+adfjakjdfhkjahdfkjhasdfkjh
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Inverted_Pendulum_with_Boundary_at_0.2.png}
+      \caption{Protective Boundary at 0.2}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Inverted_Pendulum_with_Boundary_at_0.4.png}
+      \caption{Protective Boundary at 0.4}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Inverted_Pendulum_with_Boundary_at_0.5.png}
+      \caption{Protective Boundary at 0.5}
+    \end{subfigure}
+    \caption{Inverted Pendulum Experiments}
+    \label{fig:InvertedPendulum}
+\end{figure}
 \subsubsection{Inverted Double Pendulum}
+fakdflaksdjflakdjflajsdlfjlakdfjlkajdsflkjlasdjf
+adfjakjdfhkjahdfkjhasdfkjh
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Double_Pendulum_with_Boundary_at_0.4.png}
+      \caption{Protective Boundary at 0.4}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Double_Pendulum_with_Boundary_at_0.5.png}
+      \caption{Protective Boundary at 0.5}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Double_Pendulum_with_Boundary_at_0.6.png}
+      \caption{Protective Boundary at 0.6}
+    \end{subfigure}
+    \caption{Inverted Double Pendulum Experiments}
+    \label{fig:Double Pendulum}
+\end{figure}
+
+
+\subsubsection{Inverted Double Pendulum}
+\subsubsection{Mountain Car}
+\subsubsection{}
 \subsubsection{Mountain Car}
 \subsubsection{}
 

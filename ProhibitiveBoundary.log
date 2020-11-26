@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  26 NOV 2020 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  26 NOV 2020 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1002,7 +1002,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ]
-<Control.png, id=101, 1046.91125pt x 636.3775pt>
+<Control.png, id=97, 1046.91125pt x 636.3775pt>
 File: Control.png Graphic file (type png)
 <use Control.png>
 Package pdftex.def Info: Control.png  used on input line 85.
@@ -1021,12 +1021,12 @@ LaTeX Warning: Citation `Hornik1989MultilayerFN' on page 2 undefined on input l
 ine 105.
 
 [2 <./Control.png>]
-<training1.png, id=118, 432.61626pt x 371.3875pt>
+<training1.png, id=114, 432.61626pt x 371.3875pt>
 File: training1.png Graphic file (type png)
 <use training1.png>
 Package pdftex.def Info: training1.png  used on input line 116.
 (pdftex.def)             Requested size: 129.0pt x 110.74274pt.
-<training2.png, id=119, 428.60126pt x 372.39125pt>
+<training2.png, id=115, 428.60126pt x 372.39125pt>
 File: training2.png Graphic file (type png)
 <use training2.png>
 Package pdftex.def Info: training2.png  used on input line 121.
@@ -1036,147 +1036,144 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 114--124
  []$[]$$[]$ 
  []
 
-<Cartpole_with_Boundary_at_0.5.png, id=120, 939.51pt x 722.7pt>
+<Cartpole_with_Boundary_at_0.5.png, id=116, 1102.1175pt x 603.25375pt>
 File: Cartpole_with_Boundary_at_0.5.png Graphic file (type png)
 <use Cartpole_with_Boundary_at_0.5.png>
 Package pdftex.def Info: Cartpole_with_Boundary_at_0.5.png  used on input line 
-143.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 141--146
- [][] 
- []
-
-<Cartpole_with_Boundary_at_0.7.png, id=121, 939.51pt x 722.7pt>
+144.
+(pdftex.def)             Requested size: 258.0pt x 141.21236pt.
+<Cartpole_with_Boundary_at_0.7.png, id=117, 1098.1025pt x 598.235pt>
 File: Cartpole_with_Boundary_at_0.7.png Graphic file (type png)
 <use Cartpole_with_Boundary_at_0.7.png>
 Package pdftex.def Info: Cartpole_with_Boundary_at_0.7.png  used on input line 
 149.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 147--152
- [][] 
- []
-
-<Cartpole_with_Boundary_at_0.9.png, id=122, 939.51pt x 722.7pt>
+(pdftex.def)             Requested size: 258.0pt x 140.54872pt.
+<Cartpole_with_Boundary_at_0.9.png, id=118, 1093.08376pt x 603.25375pt>
 File: Cartpole_with_Boundary_at_0.9.png Graphic file (type png)
 <use Cartpole_with_Boundary_at_0.9.png>
 Package pdftex.def Info: Cartpole_with_Boundary_at_0.9.png  used on input line 
-155.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+154.
+(pdftex.def)             Requested size: 258.0pt x 142.38138pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 153--158
+Overfull \hbox (6.0pt too wide) in paragraph at lines 142--156
  [][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 142--156
+ [] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 142--156
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<Inverted_Pendulum_with_Boundary_at_0.2.png, id=123, 939.51pt x 722.7pt>
+<Inverted_Pendulum_with_Boundary_at_0.2.png, id=119, 1100.11pt x 606.265pt>
 File: Inverted_Pendulum_with_Boundary_at_0.2.png Graphic file (type png)
 <use Inverted_Pendulum_with_Boundary_at_0.2.png>
 Package pdftex.def Info: Inverted_Pendulum_with_Boundary_at_0.2.png  used on in
-put line 170.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 168--173
- [][] 
- []
-
-<Inverted_Pendulum_with_Boundary_at_0.4.png, id=124, 939.51pt x 722.7pt>
+put line 168.
+(pdftex.def)             Requested size: 258.0pt x 142.17627pt.
+<Inverted_Pendulum_with_Boundary_at_0.4.png, id=120, 1086.0575pt x 602.25pt>
 File: Inverted_Pendulum_with_Boundary_at_0.4.png Graphic file (type png)
 <use Inverted_Pendulum_with_Boundary_at_0.4.png>
 Package pdftex.def Info: Inverted_Pendulum_with_Boundary_at_0.4.png  used on in
-put line 176.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
-<Inverted_Pendulum_with_Boundary_at_0.5.png, id=125, 939.51pt x 722.7pt>
+put line 173.
+(pdftex.def)             Requested size: 258.0pt x 143.06342pt.
+<Inverted_Pendulum_with_Boundary_at_0.5.png, id=121, 1085.05376pt x 604.2575pt>
+
 File: Inverted_Pendulum_with_Boundary_at_0.5.png Graphic file (type png)
 <use Inverted_Pendulum_with_Boundary_at_0.5.png>
 Package pdftex.def Info: Inverted_Pendulum_with_Boundary_at_0.5.png  used on in
-put line 181.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+put line 178.
+(pdftex.def)             Requested size: 258.0pt x 143.6786pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 174--184
+Overfull \hbox (6.0pt too wide) in paragraph at lines 166--180
  [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 174--184
+Overfull \hbox (6.0pt too wide) in paragraph at lines 166--180
  [] 
  []
 
-[3 <./training1.png> <./training2.png> <./Cartpole_with_Boundary_at_0.5.png> <.
-/Cartpole_with_Boundary_at_0.7.png> <./Cartpole_with_Boundary_at_0.9.png>]
-<Double_Pendulum_with_Boundary_at_0.4.png, id=137, 939.51pt x 722.7pt>
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 166--180
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./training1.png> <./training2.png> <./Cartpole_with_Boundary_at_0.5.png> <
+./Cartpole_with_Boundary_at_0.7.png> <./Cartpole_with_Boundary_at_0.9.png>]
+<Double_Pendulum_with_Boundary_at_0.4.png, id=133, 1109.14375pt x 609.27625pt>
 File: Double_Pendulum_with_Boundary_at_0.4.png Graphic file (type png)
 <use Double_Pendulum_with_Boundary_at_0.4.png>
 Package pdftex.def Info: Double_Pendulum_with_Boundary_at_0.4.png  used on inpu
-t line 194.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 192--197
- [][] 
- []
-
-<Double_Pendulum_with_Boundary_at_0.5.png, id=138, 939.51pt x 722.7pt>
+t line 190.
+(pdftex.def)             Requested size: 258.0pt x 141.72034pt.
+<Double_Pendulum_with_Boundary_at_0.5.png, id=134, 1106.1325pt x 606.265pt>
 File: Double_Pendulum_with_Boundary_at_0.5.png Graphic file (type png)
 <use Double_Pendulum_with_Boundary_at_0.5.png>
 Package pdftex.def Info: Double_Pendulum_with_Boundary_at_0.5.png  used on inpu
-t line 200.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
-<Double_Pendulum_with_Boundary_at_0.6.png, id=139, 939.51pt x 722.7pt>
+t line 195.
+(pdftex.def)             Requested size: 258.0pt x 141.40845pt.
+<Double_Pendulum_with_Boundary_at_0.6.png, id=135, 1125.20375pt x 602.25pt>
 File: Double_Pendulum_with_Boundary_at_0.6.png Graphic file (type png)
 <use Double_Pendulum_with_Boundary_at_0.6.png>
 Package pdftex.def Info: Double_Pendulum_with_Boundary_at_0.6.png  used on inpu
-t line 205.
-(pdftex.def)             Requested size: 258.0pt x 198.4619pt.
+t line 200.
+(pdftex.def)             Requested size: 258.0pt x 138.09186pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 198--208
+Overfull \hbox (6.0pt too wide) in paragraph at lines 188--202
  [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 198--208
+Overfull \hbox (6.0pt too wide) in paragraph at lines 188--202
  [] 
  []
 
-[4 <./Inverted_Pendulum_with_Boundary_at_0.2.png> <./Inverted_Pendulum_with_Bou
-ndary_at_0.4.png> <./Inverted_Pendulum_with_Boundary_at_0.5.png> <./Double_Pend
-ulum_with_Boundary_at_0.4.png> <./Double_Pendulum_with_Boundary_at_0.5.png> <./
-Double_Pendulum_with_Boundary_at_0.6.png>] (./ProhibitiveBoundary.bbl) [5
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 188--202
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./ProhibitiveBoundary.bbl) [4 <./Inverted_Pendulum_with_Boundary_at_0.2.png> <
+./Inverted_Pendulum_with_Boundary_at_0.4.png> <./Inverted_Pendulum_with_Boundar
+y_at_0.5.png> <./Double_Pendulum_with_Boundary_at_0.4.png> <./Double_Pendulum_w
+ith_Boundary_at_0.5.png> <./Double_Pendulum_with_Boundary_at_0.6.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
 
 (./ProhibitiveBoundary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package rerunfilecheck Info: File `ProhibitiveBoundary.out' has not changed.
+(rerunfilecheck)             Checksum: 8CAB452EA21592D99E59C421159150C0;1218.
 
-
-Package rerunfilecheck Warning: File `ProhibitiveBoundary.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ProhibitiveBoundary.out':
-(rerunfilecheck)             Before: 1F9B86828AC62E1BFC01BF71AB56A25C;1305
-(rerunfilecheck)             After:  5D17AE7C62FA34361FC0936948BC0E12;1302.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 23051 strings out of 481239
- 419061 string characters out of 5920378
- 691422 words of memory out of 5000000
+ 23049 strings out of 481239
+ 419043 string characters out of 5920378
+ 691421 words of memory out of 5000000
  37674 multiletter control sequences out of 15000+600000
  651479 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,60p,1887b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,60p,1887b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -1186,10 +1183,10 @@ lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProhibitiveBoundary.pdf (5 pages, 1773594 bytes).
+Output written on ProhibitiveBoundary.pdf (4 pages, 1521322 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 27873 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 27865 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -223,7 +223,7 @@ Our experiments result is show by figure \ref{fig:Double Pendulum} with conclusi
 \end{figure}
 
 
-\subsubsection{Hopper}
+\subsection{Hopper}
 The observation space of hopper is the following: [z position, y position, thigh joint angle, leg joint angle, foot joint angle, velocity at x axis, velocity at z axis, velocity at y axis, angular velocity of thigh joint, angular velocity of leg joint, angular velocity of foot joint].
 
 The action space of hopper are three continuous action choices for three acturators [thigh acturator, leg acturator, foot acturator]. The range of for acturators are -1, which means apply force towards the negative direction with maximum power, and 1 which means apply force towards the positive direction with maximum power.
@@ -262,7 +262,7 @@ Our experiment result is show by fiture \ref{fig:Hopper}. Similar to the conclus
 \end{figure}
 
 
-\subsubsection{Walker2d}
+\subsection{Walker2d}
 The walker environment's observation spaces are as the following: [z positoin, y position, right thigh joint angle, right leg joint angle, right foot joint angle, left thigh joint angle, left leg joint angle, left foot joint angle, velocity along x axis, velocity along z axis, velocity along y axix, angular velocity for right thigh joint, angular velocity for right leg joint, angular velocity for right foot joint, angular velocity for left thigh joint, angular velocity for left leg joint, angular velocity for left foot joint]
 
 There are 6 acturators for right thigh joint, right leg joint, right foot joint and left thigh joint, left leg joint, left foot joint perspectively. The range for the motors are -1 which means apply force towards the negative direction with maximum power and 1 which means apply force towards the positive direction with maximum power.
@@ -300,7 +300,43 @@ Our experiment result is show by fiture \ref{fig:Walker}. Yet again the experime
     \label{fig:Walker}
 \end{figure}
 
+\subsection{HalfCheetah}
+The walker environment's observation spaces are as the following: [z positoin, y position, right thigh joint angle, right leg joint angle, right foot joint angle, left thigh joint angle, left leg joint angle, left foot joint angle, velocity along x axis, velocity along z axis, velocity along y axix, angular velocity for right thigh joint, angular velocity for right leg joint, angular velocity for right foot joint, angular velocity for left thigh joint, angular velocity for left leg joint, angular velocity for left foot joint]
 
+There are 6 acturators for right thigh joint, right leg joint, right foot joint and left thigh joint, left leg joint, left foot joint perspectively. The range for the motors are -1 which means apply force towards the negative direction with maximum power and 1 which means apply force towards the positive direction with maximum power.
+
+The terminal states are when the z position falls below 0.8 or raise above 2 or the absolute value of y position is greater than 1.
+
+The protective boundary is set with the y position at 0.3, 0.7 and 0.9, each with the penulty parameters that is chosen from 0,-5,-10,-15,-20 as shown by figure \ref{fig:cheetahPB}. Similar to the protective boundary of hopper, when the agent touches the protective boundary in walker environment, we gentenly guide it slightly towards the smaller y position, and the velocities terms are all set to zero in the mean time.
+
+Our experiment result is show by fiture \ref{fig:Cheetah}. Yet again the experiment result suggest the same conclusion: when the boundary is positioned at 0.1, it acts as a barrier to training.
+
+\begin{figure}
+     \centering
+      \includegraphics[width=0.2\textwidth]{cheetah.png}
+      \caption{HalfCheetah Protective Boundary}
+      \label{fig:cheetahPB}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Walker_with_Boundary_at_0.1.png}
+    \end{subfigure}
+    \vspace*{0.0mm}
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Walker_with_Boundary_at_0.5.png}
+    \end{subfigure}
+    \vspace*{0.0mm}
+    \begin{subfigure}[b]{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Walker_with_Boundary_at_0.7.png}
+    \end{subfigure}
+    \caption{HalfCheetah}
+    \label{fig:Cheetah}
+\end{figure}
 \section{Conclution}
 As shown by our experiments, when the position and punishing parameter of protective boundary is appropriate, reinforcement learning agent training can be greatly accelerated, much like human atheletes accelerate their acquistion of skills with protective equipments. We have only done experiments on the ones require lower computational power as a proof of concept and we encourage readers of our paper with access to more compute to apply to our idea to enviroments such as humanroid and humanroid standup.
 

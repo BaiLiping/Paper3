@@ -9,13 +9,10 @@
 \BOOKMARK [2][-]{subsection.2.4}{Entropy Regularization}{section.2}% 9
 \BOOKMARK [1][-]{section.3}{Protective Boundary}{}% 10
 \BOOKMARK [2][-]{subsection.3.1}{Protective Boundaries in Atheletic Training}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Implement Protective Boundary in RL Setup}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Experiments on OpenAI Gym}{section.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.3.1}{CartPole}{subsection.3.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Inverted Pendulum}{subsection.3.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Inverted Double Pendulum}{subsection.3.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Walker2d}{subsection.3.3}% 17
-\BOOKMARK [3][-]{subsubsection.3.3.5}{Hopper}{subsection.3.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.3.6}{}{subsection.3.3}% 19
-\BOOKMARK [1][-]{section.4}{Conclution}{}% 20
-\BOOKMARK [1][-]{section*.8}{References}{}% 21
+\BOOKMARK [2][-]{subsection.3.2}{Implement Protective Boundary in OpenAI Gym}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{CartPole and Inveretd Pendulum}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{Inverted Double Pendulum}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Hopper}{subsection.3.4}% 15
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Walker2d}{subsection.3.4}% 16
+\BOOKMARK [1][-]{section.4}{Conclution}{}% 17
+\BOOKMARK [1][-]{section*.10}{References}{}% 18

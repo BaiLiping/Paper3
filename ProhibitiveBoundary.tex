@@ -228,9 +228,16 @@ The action space of hopper are three continuous action choices for three acturat
 
 The terminal states for hopper are when the absolute y position is greater than 0.2.
 
-The protective boundary is set with the y position at 0.05, 0.1 and 0.15, each with the penulty parameters that is chosen from 0,-3,-5,-7,-10. When the agent touches the protective boundary, we gentenly guide it slightly towards the smaller y position, and the velocities terms are all set to zero in this step. We seek to mimic how a coach would guide an atheletes towards the desired trajectory during training. When the athelete is about to fall, the coach would take over and apply the apppriate force such that the trajectory of that athelete is reset slightly and he or she get to experience more with states that are pertinent to his/her training.
+The protective boundary is set with the y position at 0.05, 0.1 and 0.15, each with the penulty parameters that is chosen from 0,-3,-5,-7,-10 as shown by figure \ref{fig:hopperPB} When the agent touches the protective boundary, we gentenly guide it slightly towards the smaller y position, and the velocities terms are all set to zero in this step. We seek to mimic how a coach would guide an atheletes towards the desired trajectory during training. When the athelete is about to fall, the coach would take over and apply the apppriate force such that the trajectory of that athelete is reset slightly and he or she get to experience more with states that are pertinent to his/her training.
 
 Our experiment result is show by fiture \ref{fig:Hopper}. Similar to the conclusion drawn with previous experiments on cartpole, inverted pendulum and inverted double pendulum, when the protective boundary is set too narrowly at 0.05 y position, it restrict the agent and almost completely halt the agent training. The best training accepration is observed when the boundary is set at 0.15 y position, irrestpect of the penulty parameter.
+
+\begin{figure}
+     \centering
+      \includegraphics[width=0.2\textwidth]{hopper.png}
+      \caption{Hopper Protective Boundary}
+      \label{fig:hopperPB}
+\end{figure}
 
 \begin{figure}
     \centering
@@ -254,8 +261,14 @@ Our experiment result is show by fiture \ref{fig:Hopper}. Similar to the conclus
 
 
 \subsubsection{Walker2d}
-fakdflaksdjflakdjflajsdlfjlakdfjlkajdsflkjlasdjf
-adfjakjdfhkjahdfkjhasdfkjh
+
+\begin{figure}
+     \centering
+      \includegraphics[width=0.2\textwidth]{walker.png}
+      \caption{Walker2d Protective Boundary}
+      \label{fig:walkerPB}
+\end{figure}
+
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.5\textwidth}

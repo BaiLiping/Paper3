@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  27 NOV 2020 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  27 NOV 2020 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,97 +1164,105 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 205--219
 <./Cartpole_with_Boundary_at_0.9.png> <./Inverted_Pendulum_with_Boundary_at_0.1
 .png> <./Inverted_Pendulum_with_Boundary_at_0.4.png> <./Inverted_Pendulum_with_
 Boundary_at_0.5.png> <./cartpole2.png>]
-<Hopper_with_Boundary_at_0.05.png, id=151, 1110.1475pt x 598.235pt>
+<hopper.png, id=153, 345.29pt x 435.6275pt>
+File: hopper.png Graphic file (type png)
+<use hopper.png>
+Package pdftex.def Info: hopper.png  used on input line 237.
+(pdftex.def)             Requested size: 103.19843pt x 130.19736pt.
+<Hopper_with_Boundary_at_0.05.png, id=154, 1110.1475pt x 598.235pt>
 File: Hopper_with_Boundary_at_0.05.png Graphic file (type png)
 <use Hopper_with_Boundary_at_0.05.png>
 Package pdftex.def Info: Hopper_with_Boundary_at_0.05.png  used on input line 2
-39.
+46.
 (pdftex.def)             Requested size: 258.0pt x 139.02429pt.
-<Hopper_with_Boundary_at_0.1.png, id=152, 1111.15125pt x 604.2575pt>
+<Hopper_with_Boundary_at_0.1.png, id=155, 1111.15125pt x 604.2575pt>
 File: Hopper_with_Boundary_at_0.1.png Graphic file (type png)
 <use Hopper_with_Boundary_at_0.1.png>
-Package pdftex.def Info: Hopper_with_Boundary_at_0.1.png  used on input line 24
-4.
+Package pdftex.def Info: Hopper_with_Boundary_at_0.1.png  used on input line 25
+1.
 (pdftex.def)             Requested size: 258.0pt x 140.304pt.
-<Hopper_with_Boundary_at_0.15.png, id=153, 1109.14375pt x 602.25pt>
+<Hopper_with_Boundary_at_0.15.png, id=156, 1109.14375pt x 602.25pt>
 File: Hopper_with_Boundary_at_0.15.png Graphic file (type png)
 <use Hopper_with_Boundary_at_0.15.png>
 Package pdftex.def Info: Hopper_with_Boundary_at_0.15.png  used on input line 2
-49.
+56.
 (pdftex.def)             Requested size: 258.0pt x 140.086pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 237--251
+Overfull \hbox (6.0pt too wide) in paragraph at lines 244--258
  [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 237--251
+Overfull \hbox (6.0pt too wide) in paragraph at lines 244--258
  [] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 237--251
+Overfull \hbox (6.0pt too wide) in paragraph at lines 244--258
  [] 
  []
 
-<Walker_with_Boundary_at_0.1.png, id=154, 1278.7775pt x 603.25375pt>
+<walker.png, id=157, 349.305pt x 384.43625pt>
+File: walker.png Graphic file (type png)
+<use walker.png>
+Package pdftex.def Info: walker.png  used on input line 267.
+(pdftex.def)             Requested size: 103.19843pt x 113.57782pt.
+<Walker_with_Boundary_at_0.1.png, id=158, 1278.7775pt x 603.25375pt>
 File: Walker_with_Boundary_at_0.1.png Graphic file (type png)
 <use Walker_with_Boundary_at_0.1.png>
-Package pdftex.def Info: Walker_with_Boundary_at_0.1.png  used on input line 26
-3.
+Package pdftex.def Info: Walker_with_Boundary_at_0.1.png  used on input line 27
+6.
 (pdftex.def)             Requested size: 258.0pt x 121.70717pt.
-<Walker_with_Boundary_at_0.5.png, id=155, 1247.66125pt x 606.265pt>
+<Walker_with_Boundary_at_0.5.png, id=159, 1247.66125pt x 606.265pt>
 File: Walker_with_Boundary_at_0.5.png Graphic file (type png)
 <use Walker_with_Boundary_at_0.5.png>
-Package pdftex.def Info: Walker_with_Boundary_at_0.5.png  used on input line 26
-8.
+Package pdftex.def Info: Walker_with_Boundary_at_0.5.png  used on input line 28
+1.
 (pdftex.def)             Requested size: 258.0pt x 125.36748pt.
-<Walker_with_Boundary_at_0.7.png, id=156, 1224.575pt x 596.2275pt>
+<Walker_with_Boundary_at_0.7.png, id=160, 1224.575pt x 596.2275pt>
 File: Walker_with_Boundary_at_0.7.png Graphic file (type png)
 <use Walker_with_Boundary_at_0.7.png>
-Package pdftex.def Info: Walker_with_Boundary_at_0.7.png  used on input line 27
-3.
+Package pdftex.def Info: Walker_with_Boundary_at_0.7.png  used on input line 28
+6.
 (pdftex.def)             Requested size: 258.0pt x 125.61176pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 261--275
+Overfull \hbox (6.0pt too wide) in paragraph at lines 274--288
  [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 261--275
+Overfull \hbox (6.0pt too wide) in paragraph at lines 274--288
  [] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 261--275
+Overfull \hbox (6.0pt too wide) in paragraph at lines 274--288
  [] 
  []
 
-(./ProhibitiveBoundary.bbl) [5 <./Double_Pendulum_with_Boundary_at_0.4.png> <./
-Double_Pendulum_with_Boundary_at_0.5.png> <./Double_Pendulum_with_Boundary_at_0
-.6.png> <./Hopper_with_Boundary_at_0.05.png> <./Hopper_with_Boundary_at_0.1.png
-> <./Hopper_with_Boundary_at_0.15.png>] [6
-
- <./Walker_with_Boundary_at_0.1.png> <./Walker_with_Boundary_at_0.5.png> <./Wal
-ker_with_Boundary_at_0.7.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
-
-(./ProhibitiveBoundary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
+[5 <./Double_Pendulum_with_Boundary_at_0.4.png> <./Double_Pendulum_with_Boundar
+y_at_0.5.png> <./Double_Pendulum_with_Boundary_at_0.6.png> <./hopper.png> <./Ho
+pper_with_Boundary_at_0.05.png> <./Hopper_with_Boundary_at_0.1.png> <./Hopper_w
+ith_Boundary_at_0.15.png> <./walker.png>] (./ProhibitiveBoundary.bbl) [6 <./Wal
+ker_with_Boundary_at_0.1.png> <./Walker_with_Boundary_at_0.5.png> <./Walker_wit
+h_Boundary_at_0.7.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
+ (./ProhibitiveBoundary.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `ProhibitiveBoundary.out' has not changed.
-(rerunfilecheck)             Checksum: 206E1F11CE72CC9ED6D78B542B582EE3;1321.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
+(rerunfilecheck)             Checksum: 5EE09C42E8A881E4EEE4AA461A265E0B;1319.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 23124 strings out of 481239
- 420726 string characters out of 5920378
- 692631 words of memory out of 5000000
- 37715 multiletter control sequences out of 15000+600000
- 651282 words of font info for 236 fonts, out of 8000000 for 9000
+ 23140 strings out of 481239
+ 420941 string characters out of 5920378
+ 692751 words of memory out of 5000000
+ 37727 multiletter control sequences out of 15000+600000
+ 651187 words of font info for 236 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,60p,2011b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,60p,2011b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -1264,10 +1272,10 @@ lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ProhibitiveBoundary.pdf (6 pages, 2182946 bytes).
+Output written on ProhibitiveBoundary.pdf (6 pages, 2216765 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 27905 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 27915 words of extra memory for PDF output out of 29859 (max. 10000000)
 

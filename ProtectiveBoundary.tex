@@ -129,11 +129,12 @@ One difficulty facing control researchers when they first interact with OpenAI G
 \subsection{CartPole and Inveretd Pendulum}
 CartPole's Observation Space is: [Cart Position, Cart Velocity, Pole Angle, Pole Angular Velocity]. The discrete action space is for cartpole: [Push Cart to the left, Push cart to the right]. The continuous action space for Inverted Pendulum is an action ranging from -1 to 1, where -1 means the acturator moves the cart to the left with maximum power and 1 means the acturator moves the cart to the right with maximum power. The terminal states of cartpole is: when the absolute value of cart position is greater than 2.4 or when the absolute pole angle is greater than 12 degrees.
 
-We proposed three protective rings anchored on the cart, at the height of middle of the pole, each allowing the pole to fall at maximum absolute value of 6,8.4,10.8 degrees respectively, as shown by the figure \ref{fig:cartpolePB}.
+We proposed three protective rings anchored on the cart, at the height of middle of the pole, each allowing the pole to fall at maximum absolute value of 6,8.4,10.8 degrees respectively, as shown by the figure \ref{fig:cartpolePB}. The experiment result for cartpole suggest simimar conclusion as shown by figure \ref{fig:InvertedPendulum}.
+
 
 When the pole hit the protective boundary, it would push the cart back to the center, implemented by an automatic action choice of 0 or 1 depending on the sign of angle. A penulty is incurred every time the pole makes contact with the protective boundary, the penulties are set to be 0,-5,-7,-10,-12,-15 for each protective boundary. Our experiment result on cartpole are shown by figure \ref{fig:CartPole}. As the data suggest, when the boundary is set at 6 degree, it seems to be too restrictive for agent training. The best ressults is seen when the boundary is set at 10.8 degree, giving the agent plenty of rooms to adjust itself and acquiring the skill. The accelerated learning seems to be brought about mostly by the protective boundary itself instead of the penulty terms since our data suggest that when the boundary is set at the right place, all the penulties accelerate learning to a certain extend.
 
-The experiment result for cartpole suggest simimar conclusion as shown by figure \ref{fig:InvertedPendulum}
+After the agents are done training, we also evaluate their performance on environments without protective boundaries. Our data suggest that when acceleration is achieved, the agents perform identially to the agents trained in normal enviroment.
 
 \begin{figure}
      \centering
@@ -182,6 +183,7 @@ The experiment result for cartpole suggest simimar conclusion as shown by figure
     \caption{Inverted Pendulum Experiments}
     \label{fig:InvertedPendulum}
 \end{figure}
+
 \subsection{Inverted Double Pendulum}
 The inveretd double pendulum has observation space as follows: [x position of the cart, sin($\theta_1$), sin($\theta_2$),cos($\theta_1$),cos($\theta_2$),velocity of x, angular velocity of $\theta_1$, angular velocity of $\theta_2$, constraint force on x, constraint force on $\theta_1$, constraint force on $\theta_2$]. $\theta_1$ and $\theta_2$ are the angles of the upper and lower pole perspectively.
 
@@ -261,6 +263,15 @@ Our experiment result is show by fiture \ref{fig:Hopper}. Similar to the conclus
 
 
 \subsubsection{Walker2d}
+The walker environment's observation spaces are as the following: [z positoin, y position, right thigh joint angle, right leg joint angle, right foot joint angle, left thigh joint angle, left leg joint angle, left foot joint angle, velocity along x axis, velocity along z axis, velocity along y axix, angular velocity for right thigh joint, angular velocity for right leg joint, angular velocity for right foot joint, angular velocity for left thigh joint, angular velocity for left leg joint, angular velocity for left foot joint]
+
+There are 6 acturators for right thigh joint, right leg joint, right foot joint and left thigh joint, left leg joint, left foot joint perspectively. The range for the motors are -1 which means apply force towards the negative direction with maximum power and 1 which means apply force towards the positive direction with maximum power.
+
+The terminal states are when the z position falls below 0.8 or raise above 2 or the absolute value of y position is greater than 1.
+
+The protective boundary is set with the y position at 0.3, 0.7 and 0.9, each with the penulty parameters that is chosen from 0,-5,-10,-15,-20 as shown by figure \ref{fig:walkerPB}. Similar to the protective boundary of hopper, when the agent touches the protective boundary in walker environment, we gentenly guide it slightly towards the smaller y position, and the velocities terms are all set to zero in the mean time.
+
+Our experiment result is show by fiture \ref{fig:Walker}. Yet again the experiment result suggest the same conclusion: when the boundary is positioned at 0.1, it acts as a barrier to training.
 
 \begin{figure}
      \centering
@@ -295,7 +306,11 @@ As shown by our experiments, when the position and punishing parameter of protec
 
  Our proof of concept data seems to suggeset that when the boundary is set too restrictively, it hinders rather than facilitate learning. Overall, the position of the boundary is more critical compare to penulty parameter, however when the penulty parameter is set too harshly, the learning process can be slowed. The rule of thumb we used during our experiments is that the punishing parameter should be roughly the same as the reward, but with negative sign.
 
-In our experiments, position and penulty parameter of protective boundary is set in a haphazard fashion. Analytical frameworks is required in order to solve this in a systematic manner.
+ The evaluation result of agents trained with protective boundaries also suggest that when the boundary is set correctly, the agent can perform as well as does the agents trained in normal environment.
+
+ Our result, albeit just proof of concept at this point should be exciting news for those who are interested in applying reinforcement learning to real world scenarios. Acceleration is possible, if we research more into how to set up the protective boundaries.In our experiments, position and penulty parameter of protective boundary is set in a haphazard fashion. Analytical frameworks is required in order to solve this in a systematic manner.
+
+ We are reaching out to vairous researchers to further this line of research, and we look forward to welcoming more researchers to join us.
 
 \bibliographystyle{IEEEtran}
 \bibliography{Bibliography}

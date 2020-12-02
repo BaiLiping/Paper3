@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="318.44177"
-     inkscape:cy="572.31309"
+     inkscape:zoom="1.979899"
+     inkscape:cx="349.52243"
+     inkscape:cy="565.93765"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,14 +64,6 @@
        height="16.570711"
        x="79.646317"
        y="172.98694" />
-    <rect
-       style="opacity:1;fill:#999999;fill-opacity:1;stroke-width:0.46518525;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect819"
-       width="2.590523"
-       height="31.270044"
-       x="84.407799"
-       y="93.48835"
-       transform="matrix(0.96333631,0.26829677,-0.55223377,0.83368931,0,0)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 86.050043,139.84552 0.267269,33.00778"
@@ -94,14 +86,6 @@
        d="M 97.57496,182.83005 96.505882,86.345754"
        id="path899"
        inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:1;fill:#999999;fill-opacity:1;stroke-width:0.57751757;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect819-3"
-       width="3.2099042"
-       height="38.895775"
-       x="-16.770485"
-       y="122.95098"
-       transform="matrix(0.84459514,-0.53540551,0.21444355,0.97673638,0,0)" />
     <rect
        style="opacity:1;fill:#999999;fill-opacity:1;stroke-width:0.91649312;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect819-3-3"
@@ -204,5 +188,13 @@
        id="path876"
        inkscape:connector-curvature="0"
        transform="scale(0.26458333)" />
+    <rect
+       style="opacity:1;fill:#999999;fill-opacity:1;stroke-width:0.39242753;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect819-3"
+       width="3.5379987"
+       height="16.293915"
+       x="55.988079"
+       y="120.90798"
+       transform="matrix(0.99589774,0.09048591,0.22565689,0.97420684,0,0)" />
   </g>
 </svg>

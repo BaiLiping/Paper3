@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Reinforcement Learning For Control Researchers}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{A Note on Notations}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{From Approximate Dynamic Programming to RL}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Note on Notation and Nomenclature}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{From Dynamic Programming to RL}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Combine Policy Approximation and Cost-to-go Approximation}{section.2}% 5
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Advantage Actor Critic\(A2C\)}{subsection.2.3}% 6
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Trust Region Actor Critic}{subsection.2.3}% 7

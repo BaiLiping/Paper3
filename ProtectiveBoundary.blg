@@ -8,51 +8,57 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Bibliography.bib
+Repeated entry---line 105 of file Bibliography.bib
+ : @inproceedings{Sutton1998IntroductionTR
+ :                                        ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
 -- IEEEtran.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in Hewing2020LearningBasedMP
+Warning--empty booktitle in Sutton1998IntroductionTR
 
 Done.
-You've used 1 entry,
+You've used 12 entries,
             3975 wiz_defined-function locations,
-            804 strings with 7290 characters,
-and the built_in function-call counts, 545 in all, are:
-= -- 30
-> -- 9
-< -- 0
-+ -- 4
-- -- 2
-* -- 34
-:= -- 100
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 1
-chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 40
-empty$ -- 57
-format.name$ -- 3
-if$ -- 107
+            868 strings with 9076 characters,
+and the built_in function-call counts, 6493 in all, are:
+= -- 471
+> -- 174
+< -- 23
++ -- 88
+- -- 37
+* -- 304
+:= -- 1053
+add.period$ -- 24
+call.type$ -- 12
+change.case$ -- 12
+chr.to.int$ -- 48
+cite$ -- 14
+duplicate$ -- 527
+empty$ -- 612
+format.name$ -- 47
+if$ -- 1457
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 8
-newline$ -- 23
-num.names$ -- 1
-pop$ -- 23
+int.to.str$ -- 12
+missing$ -- 100
+newline$ -- 56
+num.names$ -- 12
+pop$ -- 270
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 39
+skip$ -- 513
 stack$ -- 0
-substring$ -- 1
-swap$ -- 20
-text.length$ -- 0
+substring$ -- 124
+swap$ -- 334
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 0
-warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 27
-(There was 1 warning)
+warning$ -- 2
+while$ -- 18
+width$ -- 14
+write$ -- 120
+(There was 1 error message)

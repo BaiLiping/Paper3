@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{#1}
 \csname url@rmstyle\endcsname
 \providecommand{\newblock}{\relax}
@@ -17,6 +17,52 @@
 \language=\csname l@#1\endcsname
 \fi
 #2}}
+
+\bibitem{Ho2016GenerativeAI}
+J.~Ho and S.~Ermon, ``Generative adversarial imitation learning,'' in
+  \emph{NIPS}, 2016.
+
+\bibitem{Finn2016UnsupervisedLF}
+C.~Finn, I.~J. Goodfellow, and S.~Levine, ``Unsupervised learning for physical
+  interaction through video prediction,'' \emph{ArXiv}, vol. abs/1605.07157,
+  2016.
+
+\bibitem{Finn2017ModelAgnosticMF}
+C.~Finn, P.~Abbeel, and S.~Levine, ``Model-agnostic meta-learning for fast
+  adaptation of deep networks,'' \emph{ArXiv}, vol. abs/1703.03400, 2017.
+
+\bibitem{Blundell2015WeightUI}
+C.~Blundell, J.~Cornebise, K.~Kavukcuoglu, and D.~Wierstra, ``Weight
+  uncertainty in neural networks,'' \emph{ArXiv}, vol. abs/1505.05424, 2015.
+
+\bibitem{Gal2017ConcreteD}
+Y.~Gal, J.~Hron, and A.~Kendall, ``Concrete dropout,'' in \emph{NIPS}, 2017.
+
+\bibitem{Shi2019NeuralLS}
+G.~Shi, X.~Shi, M.~O'Connell, R.~Yu, K.~Azizzadenesheli, A.~Anandkumar, Y.~Yue,
+  and S.-J. Chung, ``Neural lander: Stable drone landing control using learned
+  dynamics,'' \emph{2019 International Conference on Robotics and Automation
+  (ICRA)}, pp. 9784--9790, 2019.
+
+\bibitem{Hewing2020LearningBasedMP}
+L.~Hewing, K.~P. Wabersich, M.~Menner, and M.~N. Zeilinger, ``Learning-based
+  model predictive control: Toward safe learning in control,'' 2020.
+
+\bibitem{Mohan2020EmbeddingHP}
+A.~Mohan, N.~Lubbers, D.~Livescu, and M.~Chertkov, ``Embedding hard physical
+  constraints in neural network coarse-graining of 3d turbulence.''
+  \emph{arXiv: Computational Physics}, 2020.
+
+\bibitem{Powell2009WhatYS}
+W.~Powell, ``What you should know about approximate dynamic programming,''
+  \emph{Naval Research Logistics}, vol.~56, pp. 239--249, 2009.
+
+\bibitem{Sutton1998IntroductionTR}
+R.~Sutton and A.~Barto, ``Introduction to reinforcement learning,'' 1998.
+
+\bibitem{Recht2018ATO}
+B.~Recht, ``A tour of reinforcement learning: The view from continuous
+  control,'' \emph{ArXiv}, vol. abs/1806.09460, 2018.
 
 \bibitem{Bertsekas1996NeuroDynamicP}
 D.~Bertsekas and J.~Tsitsiklis, ``Neuro-dynamic programming,'' in

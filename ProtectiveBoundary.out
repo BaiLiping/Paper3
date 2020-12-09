@@ -1,19 +1,14 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Reinforcement Learning For Control Researchers}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Note on Notation and Nomenclature}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{From Dynamic Programming to RL}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Combine Policy Approximation and Cost-to-go Approximation}{section.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Advantage Actor Critic\(A2C\)}{subsection.2.3}% 6
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Trust Region Actor Critic}{subsection.2.3}% 7
-\BOOKMARK [3][-]{subsubsection.2.3.3}{PPO}{subsection.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.4}{Entropy Regularization}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Protective Boundary}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Protective Boundaries in Atheletic Training}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Implement Protective Boundary in OpenAI Gym}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{CartPole and Inveretd Pendulum}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.4}{Inverted Double Pendulum}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.5}{Hopper}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.6}{Walker2d}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.7}{HalfCheetah}{section.3}% 17
-\BOOKMARK [1][-]{section.4}{Conclution}{}% 18
-\BOOKMARK [1][-]{section*.14}{References}{}% 19
+\BOOKMARK [2][-]{subsection.2.2}{From Optimization To Learning}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Bellman Update}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Bootstrap}{subsection.2.2}% 6
+\BOOKMARK [1][-]{section.3}{Expedited Data Collection on the Critical States with Active Boundary}{}% 7
+\BOOKMARK [1][-]{section.4}{Implement active Boundary in OpenAI Gym}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{CartPole and Inveretd Pendulum}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Inverted Double Pendulum}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Hopper}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Walker2d}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Conclution}{}% 13
+\BOOKMARK [1][-]{section*.13}{References}{}% 14

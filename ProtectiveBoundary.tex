@@ -134,7 +134,7 @@ As we pointed out in the introduction, human has amassed vast amounts of empiric
 
 Focused training with critical states is the bread and butter for athletes. Chess players start their training with endgames because that allows them to dwell on critical steps which illustrate the reasoning behind chess tactics, instead of wasting time on the "mechanical/maintenance moves" that lead up to a strategic position; Tennis coaches feed athlete balls with a specific angle and spin speed to force he with a backhand or forehand response. Examples like this are abundant in the world of sports. Active boundary is one way to implement focused training with critical states. 
 
-When the athlete is about to fall, an attentive coach would apply force to course-correct on behalf of the athlete. This way, the athlete would have experienced the right way to handle that state as opposed to just falling. As indicated by figure \ref{fig:athelete}, a coach can implement an active boundary because he can apply the appropriate force in due time. A safety net, on the other hand, is a passive boundary, since it does nothing other than catch people during a fall and no information on the critical state is generated in that process. The distinction between active and passive boundary is important because while prevention of premature termination is an implicit outcome of active boundary, it is by no means its primary goal. The protective property of active boundary stems from the fact that when a critical state is handled poorly, a terminal state would ensue. Therefore, the protective property is a by-product of directing the agents towards critical states. We would further accentuate the distinctions in the following section where we provide details of our implementation of active boundary. 
+When the athlete is about to fall, an attentive coach would apply force to course-correct on behalf of the athlete. This way, the athlete would have experienced the right way to handle that state as opposed to just falling. As indicated by Figure \ref{fig:athelete}, a coach can implement an active boundary because he can apply the appropriate force in due time. A safety net, on the other hand, is a passive boundary, since it does nothing other than catch people during a fall and no information on the critical state is generated in that process. The distinction between active and passive boundary is important because while prevention of premature termination is an implicit outcome of active boundary, it is by no means its primary goal. The protective property of active boundary stems from the fact that when a critical state is handled poorly, a terminal state would ensue. Therefore, the protective property is a by-product of directing the agents towards critical states. We would further accentuate the distinctions in the following section where we provide details of our implementation of active boundary. 
 
 \begin{figure}
 \centering
@@ -153,20 +153,20 @@ When the athlete is about to fall, an attentive coach would apply force to cours
 \end{figure}
 
 \section{Implement active Boundary in OpenAI Gym}
-We implemented our active boundary experiments in OpenAI Gym\cite{Brockman2016OpenAIG} as a proof of concept. We are cognizant of the fact that most of the control tasks facing our readers would be in the real world. Therefore, we designed the active barrier in a manner such that it can be swiftly adapted to the real-world scenario.
+We implemented our active boundary experiments in OpenAI Gym\cite{Brockman2016OpenAIG} as a proof of concept. We are cognizant of the fact that eventually, things should apply to a real-world scenario. Therefore, we designed the active boundary in a manner such that it can be swiftly adapted to physical implementation. Agents are implemented with tensorforce\cite{tensorforce}. We sorted out the observation space and action space for each environment and recorded them in the code of each experiment.
 
-OpenAI Gym is a simulation environment build for reinforcement learning agents. Agent observes the state vector, reward, and termination after taking a step, which is implemented in the following sentence: observation, reward, done, info = environment.step(action).
+As we suggested in the previous section when agents reach the critical state, "correct actions" would be applied by the active boundary to the agent, hence the name "active". Much like a coach would guide athletes through the most crucial step of the training. We also designed a penalty term associated with active boundary to discourage its use. If the agent act flawlessly at the critical state, no penalty would be applied. On the other hand, if the agent requires active boundary intervention, a penalty term would be registered. 
 
-There are various reinforcement learning agent implementations out there in the market. We choose tensorforce\cite{tensorforce} for this paper because it is routinely maintained, updated, and with detailed instructions on how each agent is constructed. In our experiments, we set the parameters of the agents not to minimize training steps but to accentuate the difference between our approach and that of regular training. Agents in the same environments share the same parameters.
+The positions and penalty terms are set in an ad hoc fashion in our experiments. At this point, we do not have an analytical frame that can guide us in making such decisions. We choose three positions for the boundary during each experiment and 4-6 penalty terms ranging from 0 upwards. The rule of thumb we used for the penalty is that the punishment score should be comparable to the reward.
 
-As we pointed out in the previous section, active boundary is active as opposed to be a passive boundary. When the agents reach the critical state, the "correct action" would be applied by the active boundary, much like a coach would guide atheletes through the most crucial step of the training. We also designed a penalty assiciated with active boundary. If the agent act correctly all by itself at the critical state, then no penalty would be applied. On the other hand, if the agent requires active boundary intervention at the critical state, a penalty term would be registered. 
+Our experiments are conducted over the following environments: CartPole, with discrete action space; Inverted Pendulum, with continuous action space; Inverted Double Pendulum; Hopper; Walker2D. We did not implement our approach to more sophisticated environments such as HalfCheetah, Humanoid, and HumanroidStandup due to hardware constraints. Yet we feel that for the data we collected, our approach has shown conclusive results. The following are our experiment setup and results.
 
-Our experiments are conducted over the following environments: CartPole, with discrete action space; Inverted Pendulum, with continuous action space; Inverted Double Pendulum; Hopper; Walker2D. We did not implement our approach on more sophisticated environments such as HalfCheetah, Humanoid, and HumanroidStandup due to hardware constraints. Yet we feel that for the data we collected, our approach has shown conclusive results. The following are our experiment setup and results.
+The dashed black lines are the training results of agents with normal training, which functions as the control group and the benchmark. The colored lines are the results of agents trained with varying penalty terms. The average evaluation scores of the agents are presented at the upper left corner of the graph.
 
 \subsection{CartPole and Inveretd Pendulum}
 CartPole's Observation Space is the vector: [Cart Position, Cart Velocity, Pole Angle, Pole Angular Velocity]. The discrete action space for cartpole is: [Push Cart to the left, Push cart to the right]. The continuous action space for Inverted Pendulum is an action ranging from -1 to 1, where -1 means the actuator moves the cart to the left with maximum power and 1 means the actuator moves the cart to the right with maximum power. The maximum episode step number for cartpole and inverted pendulum are 500 steps and 300 steps respectively. The terminal state for cartpole is angle of absolute value greater than 24 degrees. The terminal state for the inverted pendulum is an angle of absolute value greater than 0.2 radius. The reward for cartpole and inverted pendulum are both 1 for each step and 0 for the terminal step. 
 
-The active boundary is implemented as a ring anchored on the cart, at the height of middle of the pole. Touch sensors would be installed in order to detect contact between the pole and the ring. We propose three set of rings each allows maximum angle of 0.5, 0.7, and 0.9 of the terminal state angle in the cartpole environment and 0.1, 0.4, 0.5 radius in the inverted pendulum environment, as shown by the figure \ref{fig:cartpolePB}. 
+The active boundary is implemented as a ring anchored on the cart, at the height of the middle of the pole. Touch sensors would be installed in order to detect contact between the pole and the ring. We propose three sets of rings each allows a maximum angle of 0.5, 0.7, and 0.9 of the terminal state angle in the cartpole environment and 0.1, 0.4, 0.5 radii in the inverted pendulum environment, as shown by Figure \ref{fig:cartpolePB}. 
 
 \begin{figure}
      \centering
@@ -176,7 +176,7 @@ The active boundary is implemented as a ring anchored on the cart, at the height
 \end{figure}
 When contact between the pole and the active boundary is detected by the sensor, the cart would be pushed towards the appropriate direction depending on the sign of the angle. This step can be easily programmed by a microcontroller in physical implementation, and for implementation in simulation, it is just a matter of specifying a premeditated action. For detailed code, please refer to the code depository. Note that should the boundary is set without touch sensors and the corresponding actions, it would just be a passive boundary instead of an active one. 
 
-A penalty, which is chosen from vector [0,-5,-7,-10,-12,-15] would incur every time the pole contacts the active boundary. Our experiment result on cartpole are shown by figure \ref{fig:CartPole}. The experiment result on inverted pendulum is shown by figure \ref{fig:InvertedPendulum}. As the data suggest, when the boundary is set too restrictively, it severely . The best ressults is seen when the boundary is set at 10.8 degree, giving the agent plenty of rooms to adjust itself and acquiring the skill. The accelerated learning seems to be brought about mostly by the active boundary itself instead of the penalty terms since our data suggest that when the boundary is set at the right place, all the penulties accelerate learning to a certain extend. After the agents are done training, we evaluate their performance in normal environments, the average evaluation scores are presented at the upper left part of the graphs. Our data suggest that when the boundary is positioned at the right place, agents with accelerated trainng perform comparably to the agents with normal training during evaluation.
+A penalty term, which is chosen from vector [0,-5,-7,-10,-12,-15], would incur every time the pole contacts the active boundary. Our experiment result on cartpole are shown by figure \ref{fig:CartPole}. The experiment result on inverted pendulum is shown by figure \ref{fig:InvertedPendulum}. As the data suggest, when the boundary is set too restrictively, it severely hinders the training. The best results is seen when the boundary is set at 10.8 degrees. After the agents are done training, we evaluate their performance in normal environments, the average evaluation scores are presented at the upper left part of the graphs. Our data suggest that during the evaluation, agents with accelerated training perform comparably to the agents with normal training.
 
 
 \begin{figure}
@@ -209,7 +209,7 @@ A penalty, which is chosen from vector [0,-5,-7,-10,-12,-15] would incur every t
     \vspace*{0.0mm}
     \begin{subfigure}[b]{0.5\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{Inverted_Pendulum_with_Boundary_at_0.4.png}
+      \includegraphics[width=\textwidth]{Inverted_Pendulum_with_Boundary_at_0.3.png}
     \end{subfigure}
     \vspace*{0.0mm}
     \begin{subfigure}[b]{0.5\textwidth}
@@ -227,7 +227,7 @@ The action space for Inverted Double Pendulum is an action ranging from -1 to 1,
 
 The Terminal state of double inveretd pendulum is when the y postion of the upper pole, which can not be observed by the agent, falls below 1.
 
-We design the active boundary to be located at the same height as does the joint between upper and lower pole, as indicated by figure \ref{fig:doublePB}. The boundary allows the joint to flex for 0.4, 0.5 and 0.6 radii respectively, each with the penalty parameters of a choice between 0,-3,-4,-5,-6,-7. When the joint extends to touch the active boundary, an action of -1 or 1 would be automatically applied to rectify the situation, depending on the sigh of the angles.
+We design the active boundary to be located at the same height as does the joint between the upper and the lower pole, as indicated by figure \ref{fig:doublePB}. The boundary allows the joint to flex for 0.4, 0.5 and 0.6 radii respectively, each with the penalty parameters of a choice between 0,-3,-4,-5,-6,-7. When the joint extends to touch the active boundary, an action of -1 or 1 would be automatically applied to rectify the situation, depending on the sigh of the angles.
 
 \begin{figure}
      \centering
@@ -236,7 +236,7 @@ We design the active boundary to be located at the same height as does the joint
       \label{fig:doublePB}
 \end{figure}
 
-Our experiment result is shown by figure \ref{fig:Double Pendulum} with a conclusion similar to that of cartpole and inverted pendulum results. When the active boundary is set at 0.4 radii, it hinders learning rather than facilitate it. When the boundary is set at 0.5 radii with a penalty parameter of -7, we see the most drastic acceleration of agent training. However, when the boundary is set at 0.6 radii, it seems to have given the agent too much flexibility since the result suggests that the acceleration is not as profound compare to that of the boundary set at 0.5.
+Our experiment result is shown by figure \ref{fig:Double Pendulum}. The conclusion is similar to that of cartpole and inverted pendulum results. When the active boundary is set at 0.4 radii, it hinders learning rather than facilitate it. When the boundary is set at 0.5 radii with a penalty parameter of -7, we see the most drastic acceleration of agent training. However, when the boundary is set at 0.6 radii, it seems to have given the agent too much flexibility since the result suggests that the acceleration is not as profound compare to that of the boundary set at 0.5.
 
 \begin{figure}
     \centering
@@ -252,7 +252,7 @@ Our experiment result is shown by figure \ref{fig:Double Pendulum} with a conclu
     \vspace*{0.0mm}
     \begin{subfigure}[b]{0.5\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{Double_Pendulum_with_Boundary_at_0.6.png}
+      \includegraphics[width=\textwidth]{Double_Pendulum_with_Boundary_at_0.7.png}
     \end{subfigure}
     \caption{Inverted Double Pendulum Experiments}
     \label{fig:Double Pendulum}
@@ -260,15 +260,15 @@ Our experiment result is shown by figure \ref{fig:Double Pendulum} with a conclu
 
 
 \subsection{Hopper}
-The observation space of hopper is the following: [z position, y position, thigh joint angle, leg joint angle, foot joint angle, velocity at x axis, velocity at z axis, velocity at y axis, angular velocity of thigh joint, angular velocity of leg joint, angular velocity of foot joint].
+The observation space of hopper is the following vector: [z position, y position, thigh joint angle, leg joint angle, foot joint angle, velocity at x-axis, velocity at z-axis, velocity at y-axis, angular velocity of thigh joint, angular velocity of leg joint, angular velocity of foot joint].
 
 The action space of hopper are three continuous action choices for three actuators [thigh actuator, leg actuator, foot actuator]. The range of for actuators are -1, which means apply force towards the negative direction with maximum power, and 1 which means apply force towards the positive direction with maximum power.
 
 The terminal states for hopper are when the absolute y position is greater than 0.2.
 
-The active boundary is set with the y position at 0.05, 0.1 and 0.15, each with the penalty parameters that is chosen from 0,-3,-5,-7,-10 as shown by figure \ref{fig:hopperPB} When the agent touches the active boundary, we gentenly guide it slightly towards the smaller y position, and the velocities terms are all set to zero in this step. We seek to mimic how a coach would guide an atheletes towards the desired trajectory during training. When the athelete is about to fall, the coach would take over and apply the apppriate force such that the trajectory of that athelete is reset slightly and he or she get to experience more with states that are pertinent to his/her training.
+There are more than one ways to implement active boundary in hopper environment. Because we want things to be applicable in real-world scenarios, we chose the implementation with the easiest setup. In our experiment, the active boundary is defined with the y-position at 0.05, 0.1 and 0.15, each with the penalty parameters that is chosen from 0,-3,-5,-7,-10 as shown by figure \ref{fig:hopperPB} When the agent touches the active boundary, we gently guide it slightly towards the center line, and the velocities terms are all set to zero. We seek to mimic how a coach would guide an athlete towards the desired trajectory during training. When the athlete is about to deviate off-course, the coach would take over and apply the appropriate force to slightly reset the trajectory. This can be implemented with an automatic harness in a physical experiment.
 
-Our experiment result is show by fiture \ref{fig:Hopper}. Similar to the conclusion drawn with previous experiments on cartpole, inverted pendulum and inverted double pendulum, when the active boundary is set too narrowly at 0.05 y position, it restrict the agent and almost completely halt the agent training. The best training accepration is observed when the boundary is set at 0.15 y position, irrestpect of the penalty parameter.
+Our experiment result is shown by Figure \ref{fig:Hopper}. Similar to the conclusion drawn with previous data, when the active boundary is set too narrowly at 0.05 y position, it restricts the agent and almost completely halts the agent training. The best training acceleration is observed when the boundary is set at 0.15 y position.
 
 \begin{figure}
      \centering
@@ -299,15 +299,15 @@ Our experiment result is show by fiture \ref{fig:Hopper}. Similar to the conclus
 
 
 \subsection{Walker2d}
-The walker environment's observation spaces are as the following: [z positoin, y position, right thigh joint angle, right leg joint angle, right foot joint angle, left thigh joint angle, left leg joint angle, left foot joint angle, velocity along x axis, velocity along z axis, velocity along y axix, angular velocity for right thigh joint, angular velocity for right leg joint, angular velocity for right foot joint, angular velocity for left thigh joint, angular velocity for left leg joint, angular velocity for left foot joint]
+The walker environment's observation space is the following vector: [z position, y position, right thigh joint angle, right leg joint angle, right foot joint angle, left thigh joint angle, left leg joint angle, left foot joint angle, velocity along x axis, velocity along z axis, velocity along y axix, angular velocity for right thigh joint, angular velocity for right leg joint, angular velocity for right foot joint, angular velocity for left thigh joint, angular velocity for left leg joint, angular velocity for left foot joint]
 
-There are 6 actuators for right thigh joint, right leg joint, right foot joint and left thigh joint, left leg joint, left foot joint perspectively. The range for the motors are -1 which means apply force towards the negative direction with maximum power and 1 which means apply force towards the positive direction with maximum power.
+There are 6 actuators for the right thigh joint, right leg joint, right foot joint and left thigh joint, left leg joint, left foot joint perspectively. The range for the motors is -1, which means apply force towards the negative direction with maximum power and 1, which means apply force towards the positive direction with maximum power.
 
-The terminal states are when the z position falls below 0.8 or raise above 2 or the absolute value of y position is greater than 1.
+The terminal states are when the z position falls below 0.8 or rise above 2 or the absolute value of y position is greater than 1.
 
-The active boundary is set with the y position at 0.3, 0.7 and 0.9, each with the penalty parameters that is chosen from 0,-5,-10,-15,-20 as shown by figure \ref{fig:walkerPB}. Similar to the active boundary of hopper, when the agent touches the active boundary in walker environment, we gentenly guide it slightly towards the smaller y position, and the velocities terms are all set to zero in the mean time.
+The active boundary is set with the y position at 0.3, 0.7 and 0.9, each with the penalty parameters that is chosen from 0,-5,-10,-15,-20 as shown by figure \ref{fig:walkerPB}. Similar to the active boundary for hopper, when the agent touches the active boundary in the walker environment, we gently guide it slightly towards the central line, and the velocities terms are all set to zero in the meantime.
 
-Our experiment result is show by fiture \ref{fig:Walker}. Yet again the experiment result suggest the same conclusion: when the boundary is positioned at 0.1, it acts as a barrier to training.
+Our experiment result is shown in Figure \ref{fig:Walker}. Yet again the experiment result suggests the same conclusion: when the boundary is positioned at 0.1, it acts as a barrier to training. When it is set at 0.7 positions, it could accelerate training with the appropriate penalty term.
 
 \begin{figure}
      \centering
@@ -339,11 +339,11 @@ Our experiment result is show by fiture \ref{fig:Walker}. Yet again the experime
 
 \section{Conclution}
 
-In this paper we introduced the active boundary idea based on our observation of atheletic training. Our proof of concept data suggeset when the position and penalty associated with active boundary is set appropriately, accelerated learning can be achieved. Future research should focusing on devicing analytical tools that can systematically derive best position and penelty for an active boundary.
+In this paper, we introduced the active boundary idea based on our observation of athletic training. Our proof of concept data suggests when the position and penalty associated with active boundary are set appropriately, accelerated learning can be achieved. Future research should focus on devising analytical tools that can systematically derive the best position and penalty for an active boundary.
 
-Next step, we plan on extending the active boundary idea to the deep drone acrobat project \cite{Kaufmann2020DeepDA}. The training of drone acrobat is done in simulation and then transfered to real world drone controller. We believe our active boundary method can accelerate the training of drone acrobat. This paper proves that active boundary method works. In our next project we hope to demostrate its efficacy. 
+Next step, we plan on extending the active boundary idea to the deep drone acrobat project \cite{Kaufmann2020DeepDA}. The training of drone acrobat is done in simulation and then transferred to a real-world drone controller. We think our active boundary method can greatly accelerate the training of drone acrobats. 
 
-We believe our research opens door to a rich reservoir of potential researches along the direction of adapting proven human training techniques to RL environments. For instance, the endgames training strategy deployed to educate chess player. During the training phase, the agent should start the game middle way in order to amass experience with critical states, instead of wasting time on steps leading up to the critical position. Coaches also challenge atheletes in order to push them to experience difficult situations. This style of accelerated training be easily implemented in RL environment as well. 
+We believe our research opens door to a rich reservoir of potential researches along the direction of adapting proven human training techniques to RL environments. Human achieves superhuman feats not because of talent, but because of the meticulously engineered coaching tactics. Current researches in RL focus solely on the "athlete" side of the equation, i.e. how to build an efficient RL agent. But we feel "coach" is as important, if not more so.  For instance, the endgames training strategy was deployed to educate chess players. During the training phase, the agent should start the game middle way to amass experience with critical states, instead of wasting time on steps leading up to the critical position. Coaches also challenge athletes, pushing them to experience difficult situations. "Coach" could even be implemented by independent neural networks, in addition to the agent, and trained to "teach" better. All these should be investigated by future researches. 
 
 \bibliographystyle{IEEEtran}
 \bibliography{Bibliography}
